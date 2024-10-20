@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/estilo.css') }}">
+    <style>
+        body, html {
+            height: 100%; 
+            margin: 0; 
+        }
+        .container {
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            height: calc(100% - 200px); 
+            flex-direction: column; 
+        }
+        .card {
+            background-color: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DATOS DEL FORMULARIO REGISTRO DE PRODUCTOS</h1>
+    </header>
+    <br>
+    <div class="container">
+        <div class="card">
+            <figure>
+                <img src="{{ url_for('static', filename='images/servicios.jpg') }}" alt="">
+            </figure>
+            <div class="contenido">
+                <h3>Datos enviados del formulario "Registro de productos"</h3>
+                <p>Se registro:
+                    <br>
+                    Producto: <b>{{nombre}}</b>
+                    <br>
+                    Categoria: <b>{{categoria}}</b>
+                    <br>
+                    Existencias: <b>{{existencias}}</b>
+                    <br>
+                    Con precio unitario de: <b>{{precio}}</b>
+                    <br>
+                    Exitosamente!!!
+                    <br>
+                </p>
+                <a href="/">Regresar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

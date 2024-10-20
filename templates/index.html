@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios de registro</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='CSS/estilo.css')}}">
+</head>
+<body>
+    <header><h1>Registre el formulario que desee</h1></header>
+    <div class="container">
+        <div class="card">
+            <figure>
+                <!--<img src="images/testimonio.jpg" alt=""> -->
+            </figure>
+            <div class="contenido">
+                <h3>Inscripcion en curso</h3>
+                <form action="/form1" method="post">
+                    <label for="" name="nombre">Nombre</label>
+                    <input type="text" name="nombre">
+                    <br>
+                    <label for="" name="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos">
+                    <br>
+                    <label for="">Curso:</label>
+                    <select name="select" id="">
+                        <option value="Algebra">Algebra</option>
+                        <option value="Quimica">Qumica</option>
+                        <option value="Fisica">Fisica</option>
+                        <option value="Calculo">Calculo</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+         </div>
+
+
+         <div class="card">
+            <figure>
+                <!--<img src="images/testimonio.jpg" alt=""> -->
+            </figure>
+            <div class="contenido">
+                <h3>Registro de ususarios</h3>
+                <form action="/form2" method="post">
+                    <label for="" name="usuario">Nombre</label>
+                    <input type="text" name="nombreru">
+                    <br>
+                    <label for="" name="app">Apellidos</label>
+                    <input type="text" name="apellidosru">
+                    <br>
+                    <label for="" name="correo">Correo electronico</label>
+                    <input type="email" name="emailru" >
+                    <br>
+                    <label for="">Contraseña</label>
+                    <input type="password" name="contraseñaru">
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+         </div>
+       </div>
+       <br>
+         <div class="container">
+         <div class="card">
+            <figure>
+                <!--<img src="images/testimonio.jpg" alt=""> -->
+            </figure>
+            <div class="contenido">
+                <h3>Registro de productos</h3>
+                <form action="/form3" method="post">
+                    <label for="" >Producto</label>
+                    <input type="text" name="nombrepro">
+                    <br>
+                    <label for="" >Categoria</label>
+                    <select name="selectpro" id="">
+                        <option value="comida">Comida</option>
+                        <option value="medicamento">Medicamento</option>
+                        <option value="herramienta">Herramienta</option>
+                        <option value="material">Material</option>
+                    </select>
+                    <br>
+                    <label for="" >Existencias</label>
+                    <input type="number" name="existencias" >
+                    <br>
+                    <label for="">Precio</label>
+                    <input type="number" name="precio" step="0.01">
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+         </div>
+
+
+         <div class="card">
+            <figure>
+                <!--<img src="images/testimonio.jpg" alt=""> -->
+            </figure>
+            <div class="contenido">
+                <h3>Registro de Libros</h3>
+                <form action="/form4" method="post">
+                    <label for="" >Titulo</label>
+                    <input type="text" name="titulo">
+                    <br>
+                    <label for="" >Autor</label>
+                    <input type="text" name="autor">
+                    <br>
+                    <label for="" >Descripcion</label>
+                    <input type="text" name="desc" >
+                    <br>
+                    <label for="">Medio</label>
+                    <br>
+                    <input type="radio" value="fisico" name="opcion">Fisico  
+                     <br>
+                    <input type="radio" value="magnetico" name="opcion">Magnetico
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
